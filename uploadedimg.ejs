@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/uploadedimg" enctype="multipart/form-data">
+
+        <div id="uploaded-image-conatiner">
+            <%  if(url){  %>
+
+                <h2> You Have Uploaded The Following File </h2>
+                <img src="<%= url %>" alt="Uploaded Image">
+                <% } %>
+        </div>
+
+    </form>
+</body>
+</html>
